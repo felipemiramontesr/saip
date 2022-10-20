@@ -1,0 +1,40 @@
+<div class="node_article_teaser">
+
+  <div class="header">
+    <div class="fotografia"> 
+      {{ author_picture }}
+    </div>
+    <div class="contenedor_nombre_rol_fecha">
+      <div class="contenedor_nombre_rol">
+        <div class="nombre">
+           {{ author_name }}  | 
+        </div>
+        <div class="rol">
+           {%  for role in node.Owner.roles %} {{ role.entity.label }} {% endfor %}
+        </div>
+      </div>
+      <div class="fecha">
+        {{ date }} 
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="descripcion">
+        {{content.body}}
+    </div>
+    <div class="imagen">
+      {{content.field_image}}
+    </div>
+  </div>
+
+  <div class="footer"> 
+    <div class="links"> 
+      {{ content.links }}
+    </div>
+    <div class="social">
+         {{ content.addtoany }} 
+    </div>
+  </div>
+
+</div>

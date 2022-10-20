@@ -1,0 +1,11 @@
+financial.homepage:
+  title: Financial pruebas
+  description: 'Configurar el modulo financial'
+  parent: system.admin_config_ui
+  route_name: financial.content
+
+financial.ingresos:
+  title: Mostrar ingresos (modulo financial)
+  description: 'Mostrar los ingresos'
+  parent: system.admin_config_ui
+  route_name: financial.ingresos

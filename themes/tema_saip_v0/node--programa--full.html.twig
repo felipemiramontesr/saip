@@ -1,0 +1,72 @@
+<div class="node_programa_full">
+  <div class="header">
+      <div class="image">
+        {{content.field_image}}
+      </div>
+      <div class="title">
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </div> 
+  </div>
+  <div class="body">
+    <div class="descripcion_numero_de_apoyos">
+       <div class="descripcion">
+          {{content.body}}
+      </div>
+      <div class="numero_de_apoyos">
+         <div class="etiqueta">
+            Apoyos disponibles
+          </div>
+          <div class="campo">
+            {{content.field_numero_de_apoyos}}
+          </div>
+      </div>
+    </div>
+      <div class="fields">
+        <div class="estatus_del_programa">
+          <div class="etiqueta">
+            Estatus:
+          </div>
+          <div class="campo">
+              {{content.field_estatus_del_programa}}
+          </div>
+        </div>
+        <div class="fecha_de_apertura">
+           <div class="etiqueta">
+            Apertura:
+          </div>
+          <div class="campo">
+             {{content.field_fecha_de_apertura}}
+          </div>
+        </div>
+        <div class="fecha_de_cierre">
+           <div class="etiqueta">
+            Cierre:
+          </div>
+          <div class="campo">
+             {{content.field_fecha_de_cierre}}
+          </div>
+        </div>
+        <div class="area_de_gobierno">
+           <div class="etiqueta">
+            Área:
+          </div>
+          <div class="campo">
+             {{content.field_area_de_gobierno}}
+          </div>
+        </div>
+        <div class="requisitos">
+           <div class="etiqueta">
+            Requisitos:
+          </div>
+          <div class="campo">
+             {{content.field_requisitos}}
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="footer">
+    <div class="social">
+     {{ content.addtoany }}
+    </div>
+  </div>
+</div>

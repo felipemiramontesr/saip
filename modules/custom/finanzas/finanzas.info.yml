@@ -1,0 +1,7 @@
+name: Finanzas
+description: Genera tres bloques que despliegan la información financiera referente a (ingresos, egresos y balance financiero).
+package: Custom
+ 
+type: module
+core: 8.x
+version: 1.0

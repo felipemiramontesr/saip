@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Theming Steps</title>
+	 <!-- Agregamos iconos sociales desde fontawasome via ->Link ->URL -->
+  <script src="https://kit.fontawesome.com/035d00932a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div id="title">
+		<h1>Drupal 8 </h1>
+	</div>
+
+	<div id="subtitle">
+		<div id="subtitle-flex">
+				<h1>Theming steps</h1>
+		</div>
+	</div>
+	</header>
+	
+	<div id="content">
+		<div id="steps-list">
+			<ul>
+				<li>
+					1.-<a href="https://shorturl.at/bkzRV"><i class="fa fa-bullet"></i> Install Drupal 8 (Opcional Enviroment).</a>
+				</li>
+				<br>
+				<li>
+					2.-<a href="https://shorturl.at/coKU9"><i class="fa fa-bullet"></i> Theme setup.</a> 
+
+						<ul>
+							<br>
+							<li>
+								2.1-<i class="fa fa-bullet"></i> "mytheme".info.yml
+							</li>
+							<br>
+							<li>
+								2.2-<i class="fa fa-bullet"></i> "mytheme".libraries.yml
+							</li>
+						</ul>
+				</li>
+				<br>
+				<li>
+					3.-<a href="https://shorturl.at/ensJ7"><i class="fa fa-bullet"></i> Disable Cache and enable Twig Debug.</a>
+						<ul>
+							<br>
+							<li>
+								3.1-<i class="fa fa-bullet"></i> In your drupal site go to: your_drupal_site/admin/config/development/performance, and unmark the boxes (Aggregate CSS files and Aggregate JavaScript files) and save the configuration.
+							</li>
+							<br>
+							<li>
+								3.2-<i class="fa fa-bullet"></i> In the same page Clear all caches.
+							</li>
+							<br>	
+							<li>
+								3.3-<i class="fa fa-bullet"></i> Disable the cache; copy the files given in the folder "files to copy" into the route: your_drupal_installation/sites/default. Say yes to everything.
+							</li>
+							<br>	
+							<li>
+								3.4-<i class="fa fa-bullet"></i> Enable Twig debug; overwriting the file development.services.yml located into the route: your_drupal_installation/sites, with the file given in the folder "files to overwrite". Say yes to everything.
+							</li>
+							<br>	
+							<li>
+								3.5-<i class="fa fa-bullet"></i> Clear all caches two or three times just to be secure.
+							</li>
+							<br>
+							<li>
+								3.6-<i class="fa fa-bullet"></i> Refresh your drupal site and open a developer web tools console in your browser. Now you must see the twig debuging working in green font given you diferent tips and suggerations.
+							</li>
+							<br>
+							<li>
+								3.7-<i class="fa fa-bullet"></i> Change the name of your drupal installation in settings.php file at line 799 located at the route: your_drupal_installation\sites\default:<br> 
+										<p>
+											if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_<strong style="background-color: red;">NAME_OF_YOUR_INSTALLATION</strong>_dd.inc')) {
+						                    require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_<strong strong style="background-color: red;">NAME_OF_YOUR_INSTALLATION</strong>_dd.inc';
+						                    }
+					                </p>
+							</li>
+							<br>	
+							<li>
+								3.6-<i class="fa fa-bullet"></i> Clear all drupal caches two or three times just to be secure and erase cache browser.
+							</li>
+			</ul>
+				</li>
+
+			</ul>
+			
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>

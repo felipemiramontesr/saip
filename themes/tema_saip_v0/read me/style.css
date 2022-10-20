@@ -1,0 +1,38 @@
+/*Definición general del tipo de letra en el sitio*/
+body{
+	/*font-family: "Roboto", sans-serif; 
+	height: 100%;
+	background: url("wallpaper.jpg"); no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+ 	background-attachment: fixed;*/
+ 	background-color: #fff;
+ }
+
+#title{
+	color: #000;
+	font-size: 14px;
+}
+
+#subtitle{
+	color: #000;
+    font-size: 18px
+    }
+
+#content{
+	padding: 20px;
+	font-size: 14px;
+	
+	color: #000;
+}
+
+#steps-list a{
+	font-weight: bold;
+	font-size: 18px;
+	color: blue;
+	text-decoration: none;
+}
+
+#steps-list a:hover{
+	text-decoration: underline;
+}

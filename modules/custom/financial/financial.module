@@ -1,0 +1,11 @@
+
+<?php 
+function financial_theme($existing, $type, $theme, $path) {
+  return [
+    'financialBlockTemplate' => [
+      'variables' => ['total' => NULL, 'etiqueta' => NULL],
+    ],
+  ];
+}
+
+?>

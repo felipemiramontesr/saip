@@ -1,0 +1,5 @@
+finanzas.homepage:
+  title: finanzas pruebas
+  description: 'Configurar el modulo finanzas'
+  parent: system.admin_config_ui
+  route_name: finanzas.content

@@ -1,0 +1,23 @@
+financial.content:
+    path: '/admin/config/financial'
+    defaults:
+        _controller: '\Drupal\financial\Controller\financialController::content'
+        _title: 'Financial pruebas'
+    requirements:
+        _permission: 'access content'
+
+financial.ingresos:
+    path: '/ingresos/page'
+    defaults:
+        _controller: '\Drupal\financial\Controller\financialController::getIngresos'
+        _title: 'Financial ingresos'
+    requirements:
+        _permission: 'access content'
+
+financial.my_page:
+  path: '/mypage/page'
+  defaults:
+    _controller: '\Drupal\financial\Controller\financialController::myPage'
+    _title: 'My first page in D8'
+  requirements:
+    _permission: 'access content'

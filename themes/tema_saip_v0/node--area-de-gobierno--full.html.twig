@@ -1,0 +1,70 @@
+<div class="node_area_de_gobierno_full">
+  
+  <div class="header">
+    <div class="image">
+          {{ content.field_image }}
+    </div>
+    <div class="title">
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </div>   
+  </div>
+
+  <div class="body">
+    <div class="descripcion">
+           {{ content.body }}
+    </div>        
+
+    <div class="metas_y_objetivos">
+     <div class="etiqueta">
+        Metas y objetivos
+      </div>
+      <div class="campo">
+        {{ content.field_metas_y_objetivos }}
+      </div>
+    </div>
+
+    <div class="facultades">
+     <div class="etiqueta">
+       Facultades
+      </div>
+      <div class="campo">
+        {{ content.field_facultades }}
+      </div>
+    </div>
+
+    <div class="documentos">
+     <div class="etiqueta">
+       Documentos de interés
+      </div>
+      <div class="campo">
+        {{ content.field_documentos }}
+      </div>
+    </div>
+
+    <div class="servicios">
+    	<div class="etiqueta">
+    		Servicios
+    	</div>
+    	<div class="campo">
+    		{{ content.field_servicios_disponibles }}
+    	</div>
+    </div>
+
+    <div class="posicion_organica">
+      <div class="etiqueta">
+        Posición orgánica:
+      </div>
+      <div class="campo">
+        {{ content.field_posicion_organica }}
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+      <div class="social">
+        {{ content.addtoany }}
+      </div> 
+  </div>
+
+</div>

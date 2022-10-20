@@ -1,0 +1,48 @@
+<div class="node_declaracion_patrimonial_teaser">
+
+  <div class="header">
+    <div class="fotografia"> 
+      {{ author_picture }}
+    </div>
+    <div class="contenedor_nombre_rol_fecha">
+      <div class="contenedor_nombre_rol">
+        <div class="nombre">
+           {{ author_name }} |
+        </div>
+        <div class="rol">
+           {%  for role in node.Owner.roles %} {{ role.entity.label }} {% endfor %}
+        </div>
+      </div>
+      <div class="fecha">
+        {{ date }} 
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+  	 <div class="observaciones">
+         {{ content.body }}
+     </div>
+     <div class="documentos">
+     	<div class="etiqueta">
+     		Documentos:
+     	</div>
+     	<div class="campo">
+     		{{ content.field_documentos }}
+     	</div>    
+     </div>
+  </div>
+
+  <div class="footer"> 
+     <div class="links"> 
+      {{ content.links }}
+    </div>
+    <div class="social">
+     {{ content.addtoany }}
+    </div>
+  </div>
+
+</div>
+
+    
+    

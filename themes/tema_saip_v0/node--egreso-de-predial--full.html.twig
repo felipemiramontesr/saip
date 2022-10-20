@@ -1,0 +1,82 @@
+<div class="node_egreso_full">
+  <div class="header">
+    <div class="picture"> {{ author_picture }}</div>
+    <div class="created">
+      <div class="title">
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </div>
+      <div class="autor">
+           Publicado por {{ author_name }} {%  for role in node.Owner.roles %} {{ role.entity.label }} {% endfor %} el {{ date }}     
+      </div>
+    </div>
+  </div>
+  <div class="body">
+   <div class="fields">
+    <div class="alfa">
+      <div class="one">
+          <div> 
+            <div><div class="label">Folio:  </div></div>
+          </div>
+          <div> 
+            <div class="field"> {{ node.id }} </div>
+          </div>
+      </div>
+      <div class="two">
+          <div> 
+            <div><div class="label">Tipo:  </div></div>
+          </div>
+          <div> 
+            <div class="field"> {{ content.field_tipo_de_egreso_pre }} </div>
+          </div>
+      </div>
+    </div>
+    <div class="beta">
+      <div class="three">
+          <div>
+            <div class="label">Estatus:  </div>
+          </div>
+          <div>
+            <div class="field"> {{ content.field_estatus_de_la_iteracion }} </div>
+          </div>
+      </div>
+      <div class="four">
+          <div>
+            <div class="label">Monto:  </div>
+          </div>
+          <div>
+            <div class="field"> {{ content.field_monto }}</div>
+          </div>
+      </div> 
+    </div>     
+   </div>
+   <div class="observaciones">
+      <div class="observaciones_label">
+       Observaciones
+      </div>
+      <div class="observaciones_field">
+        {{ content.body }}
+      </div>
+    </div>
+
+    <div class="documentos">
+      <div class="documentos_label">
+       Documentos:
+      </div>
+      <div class="documentos_field">
+        {{ content.field_documentos }}
+      </div>
+    </div>
+
+</div>
+<div class="footer"> {{ content.field_tags }}</div>
+  <div class="subfooter">
+    <div class="links"> 
+      {{ content.links }}
+      Para mayor nivel de detalle y granularidad consulte nuestro reporte de egresos municipal: <a href="https://tlaltenango.felipemiramontesr.info/egresos">Ver reporte de egresos</a>
+
+    </div>
+    <div class="social">
+     {{ content.addtoany }}
+    </div>
+  </div>
+</div>

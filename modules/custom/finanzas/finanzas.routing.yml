@@ -1,0 +1,7 @@
+finanzas.content:
+    path: '/admin/config/finanzas'
+    defaults:
+        _controller: '\Drupal\finanzas\Controller\finanzasController::content'
+        _title: 'finanzas pruebas'
+    requirements:
+        _permission: 'access content'

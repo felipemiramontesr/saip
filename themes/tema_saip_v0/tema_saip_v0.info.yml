@@ -1,0 +1,30 @@
+name: Tema SAIP v0
+type: theme
+description: Drupal 8 theme.
+core: 8.x
+screenshot: screenshot.png
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+libraries:
+  - tema_saip_v0/global-css
+regions:
+  cabecera: 'Cabecera'
+  cabecera_movil: 'Cabecera Movil'
+  mapa_principal: 'Mapa principal'
+  totales_financieros: 'Totales financieros'
+  fotografia_de_perfil: 'Fotografia de perfil'
+  escudo: 'Escudo'
+  marca_del_sitio: 'Marca del sitio'
+  menu_principal: 'Menu principal'
+  menu_secundario: 'Menu secundario'
+  barra_lateral_izquierda: 'Barra lateral izquierda'
+  content: 'Contenido'
+  barra_lateral_derecha: 'Barra lateral derecha'
+  contenedor_de_vistas_basico: 'Contenedor de vistas básico'
+  contenedor_de_vistas_flexible: 'Contenedor de vistas flexible'
+  pie_de_pagina: 'Pie de página'
+  contenido_de_usuario: 'Contenido de usuario'
+  perfil_de_usuario: 'Perfil de usuario'
+  login: 'Login'
+

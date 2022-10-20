@@ -1,0 +1,6 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+      css/mobile-style.css: {}
+      css/normalize.css: {}

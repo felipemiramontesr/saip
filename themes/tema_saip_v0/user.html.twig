@@ -1,0 +1,35 @@
+<article{{ attributes }}>
+  {% if content %}
+    <div class="portada_fotografia_perfil">
+	<div class="portada">
+		{{content.field_portada_de_usuario}}
+		<div class="escudo">
+			{{content.field_escudo_de_usuario}}
+		</div>
+		<div class="fotografia_civil">
+			{{content.field_fotografia_civil}}
+		</div>
+		<div class="nombre_completo_de_usuario">
+			{{content.field_nombre_completo}}
+		</div>
+		<div class="nombramiento">
+			{{content.field_nombramiento}}
+		</div>
+		<div class="contacto">
+			<div class="correo_electronico">
+					{{content.field_correo_electronico}}
+			</div>
+			<div class="telefono">
+					{{content.field_telefono}}
+			</div>
+		</div>
+		<div class="pic">
+			{{content.user_picture}}
+		</div>
+	</div>
+</div>
+  {% endif %}
+</article>
+
+
+

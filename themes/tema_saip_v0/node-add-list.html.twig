@@ -1,0 +1,21 @@
+<div class="node_add_list">
+  {% if types is not empty %}
+    <dl>
+      {% for type in types %}
+        <div class="contenedor">
+           <dt>{{ type.add_link }}</dt>
+           <dd>{{ type.description }}</dd>
+        </div>
+        
+      {% endfor %}
+    </dl>
+  {% else %}
+    <p>
+      {% set create_content = path('node.type_add') %}
+      {% trans %}
+        You have not created any content types yet. Go to the <a href="{{ create_content }}">content type creation page</a> to add a new content type.
+      {% endtrans %}
+    </p>
+  {% endif %}
+</div>
+

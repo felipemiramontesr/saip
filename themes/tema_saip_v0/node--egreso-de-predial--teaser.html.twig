@@ -1,0 +1,57 @@
+<div class="node_egreso_teaser">
+
+  <div class="header">
+    <div class="fotografia"> 
+      {{ author_picture }}
+    </div>
+    <div class="contenedor_nombre_rol_fecha">
+      <div class="contenedor_nombre_rol">
+        <div class="nombre">
+           {{ author_name }}  | 
+        </div>
+        <div class="rol">
+           {%  for role in node.Owner.roles %} {{ role.entity.label }} {% endfor %}
+        </div>
+      </div>
+      <div class="fecha">
+        {{ date }} 
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    
+      <div class="tipo_folio">
+         <div class="tipo_de_egreso"> 
+            {{ content.field_tipo_de_egreso_pre }} 
+        </div>
+         <div class="folio">
+           Folio: {{ node.id }}
+        </div>
+      </div>
+    
+      <div class="area_de_gobierno">
+        <div class="etiqueta">
+          Egreso de
+        </div>
+        <div class="campo">
+           {{ content.field_area_de_gobierno }}
+        </div>           
+      </div>
+
+     <div class="monto">
+        {{ content.field_monto }}
+     </div>
+
+  </div>
+
+  <div class="footer"> 
+     <div class="links"> 
+      {{ content.links }}
+    </div>
+    <div class="social">
+     {{ content.addtoany }}
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,55 @@
+<div class="node_servicio_full">
+  <div class="header">
+      <div class="title">
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </div> 
+  </div>
+  <div class="body">
+    <div class="image_fields">
+      <div class="image">
+          {{ content.field_image }}
+      </div>
+      <div class="fields">
+          <div class="descripcion">
+              {{ content.body }}
+          </div>
+          <div class="area_de_gobierno">
+              <div class="etiqueta">
+                Área:
+              </div>
+              <div class="campo">
+                {{content.field_area_de_gobierno}}
+              </div>
+          </div>
+         
+          <div class="costo_requisitos">
+
+            <div class="costo">
+              <div class="etiqueta">
+                Costo:
+              </div>
+              <div class="campo">
+                {{ content.field_costo }}
+              </div>
+            </div>
+
+            <div class="requisitos">
+              <div class="etiqueta">
+                Requisitos:
+              </div>
+              <div class="campo">
+                {{ content.field_requisitos }}
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+      <div class="social">
+        {{ content.addtoany }}
+      </div> 
+  </div>
+</div>

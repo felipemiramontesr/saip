@@ -1,0 +1,40 @@
+<div class="comment_comment_article">
+
+  <div class="left">
+    <div class="comentario_user_picture">
+      {{ user_picture }}  {%  for role in node.Owner.roles %} {{ role.entity.label }} {% endfor %}
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="comentario_header">
+        <div class="comentario_submitted"> 
+          <div class="comentario_autor">
+             {{ author }}
+          </div>
+          <div class="comentario_fecha">
+             {{ created }}
+          </div>       
+        </div>
+    </div>
+
+    <div class="comentario_body">
+      <div class="comentario_comment_body">
+        {{content.comment_body}}
+      </div>
+      <div class="comentario_imagen">
+        {{content.field_imagen_de_comentario}}
+      </div>
+    </div>
+
+    <div class="comentario_footer">
+       <div class="comentario_links"> 
+        {{ content.links }}
+      </div>
+      <div class="comentario_social">
+       {{ content.addtoany }}
+      </div>
+    </div>
+  </div>
+
+</div>
